@@ -5,7 +5,7 @@ const Layout = ({children}) => {
                 <div className="container">
                     <header>
                       <div className="left">
-                        <img src="/public/images/logo.svg" alt="logo" />
+                        <img src="/images/logo.svg" alt="logo" />
                       </div>
                       <div className="center">
                         <a href="#">Каталог</a>
@@ -16,13 +16,13 @@ const Layout = ({children}) => {
                       </div>
                       <div className="right">
                         <div className="header-item">
-                          <img src="/public/images/heart (5) 1.svg" alt="heart" />
+                          <img src="/images/heart (5) 1.svg" alt="heart" />
                         </div>
                         <div className="header-item">
-                          <img src="/public/images/user (12) 1.svg" alt="user" />
+                          <img src="/images/user (12) 1.svg" alt="user" />
                         </div>
                         <div className="header-item">
-                          <img src="/public/images/shopping-cart (6) 1.svg" alt="cart" />
+                          <img src="/images/shopping-cart (6) 1.svg" alt="cart" />
                         </div>
                       </div>
                     </header>
@@ -41,7 +41,7 @@ const Layout = ({children}) => {
               <div className="container">
               <footer>
                 <div className="left">
-                  <img src="/public/images/logo.svg" alt="logo" />
+                  <img src="/images/logo.svg" alt="logo" />
                   <a href="#"> © 2021 “Copper Pro” Все права защищенны</a>
                   <a href="#">Политика конфиденциальности</a>
                 </div>
