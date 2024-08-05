@@ -1,0 +1,588 @@
+// @font-face {
+//   font-family: 'Mont';
+//   src: url('/assets/fonts/Mont-ExtraLightDEMO.otf') format('opentype');
+//   font-weight: 400;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Mont';
+//   src: url('/assets/fonts/Mont-HeavyDEMO.otf') format('opentype');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+:root{
+  --color-switcher: #0B3F37;
+}
+a{
+  text-decoration: none;
+}
+.first{
+  background-image: url(/public/images/BG.png);
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  header{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    .center{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      a{
+        font-family: Mont;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 15.42px;
+        text-align: center;
+        color: #fff;        
+      }
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-left: 120px;
+      .header-item{
+        background: #fff;
+        height: 50px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+  }
+  .first-title{
+    display: flex;
+    justify-content: center;
+    height: 550px;
+    gap: 40px;
+    flex-direction: column;
+    h1{
+      font-family: Lighthaus;
+      font-size: 100px;
+      font-weight: 400;
+      line-height: 74.9px;
+      text-align: left;
+      color: #fff;      
+      margin-bottom: 10px;
+    }
+    h2{
+      font-family: Mont;
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 48.2px;
+      text-align: left;
+      color: #fff;      
+    }
+    p{
+      font-family: Mont;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 28.92px;
+      text-align: left;
+      color: #fff;     
+      display: flex;
+      gap: 131px; 
+    }
+    span{
+      font-family: Mont;
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 28.92px;
+      text-align: left;
+      color: #fff;      
+    }
+    button{
+      background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+      font-family: Mont;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 17.35px;
+      text-align: center;
+      color: #fff;      
+      padding: 16px 131px;
+      margin-top: 40px;
+      border: 0;
+    }
+  }
+}
+
+.our{
+  margin-top: 80px;
+  h1{
+    font-family: Lighthaus;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37.45px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .our-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px 31px;
+    justify-content: center;
+    .item{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      &:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      p{
+        font-family: Mont;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 28.92px;
+        text-align: center;
+        color: #fff;      
+        position: absolute;
+        top: 80%;
+        left: 0;
+      }
+      span{
+        display: none;
+      }
+      .heart{
+        display: none;
+      }
+    }
+
+  }
+}
+
+.best{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  h1{
+    font-family: Lighthaus;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37.45px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .best-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+    justify-content: center;
+    margin-bottom: 46px;
+    .item{
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      &:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      .heart{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 30px;
+        z-index: 11;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-end;
+        &:hover{
+          --color-switcher: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        }
+      }
+      p{
+        font-family: Mont;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 19.28px;
+        text-align: left;
+        
+      }
+      span{
+        font-family: Mont;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 28.92px;
+        text-align: left;
+        
+      }
+      .txt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+  }
+  button{
+    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+    padding: 16px 77px;
+    border: 0;
+    font-family: Mont;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 17.35px;
+    text-align: center;
+    color: #fff;    
+  }
+  
+}
+.new{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  h1{
+    font-family: Lighthaus;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37.45px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .new-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+    justify-content: center;
+    margin-bottom: 46px;
+    .item{
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      &:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      .heart{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 30px;
+        z-index: 11;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-end;
+        &:hover{
+          --color-switcher: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        }
+      }
+      p{
+        font-family: Mont;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 19.28px;
+        text-align: left;
+        
+      }
+      span{
+        font-family: Mont;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 28.92px;
+        text-align: left;
+        
+      }
+      .txt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+  }
+  button{
+    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+    padding: 16px 77px;
+    border: 0;
+    font-family: Mont;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 17.35px;
+    text-align: center;
+    color: #fff;    
+  }
+  
+}
+
+.oneplus{
+  margin-top: 120px;
+  background-image: url("/public/images/mainstupid.png");
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 483px;
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #item1{
+    position: absolute;
+    right: 39%;
+    z-index: 11;
+    bottom: 16%;
+  }
+  #item2{
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: 10;
+  }
+  #item3{
+    position: absolute;
+    right: 0;
+  }
+  #item4{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .oneplus-txt{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-direction: column;
+    height: 483px;
+    h1{
+      font-family: Lighthaus;
+      font-size: 140px;
+      font-weight: 400;
+      line-height: 104.86px;
+      text-align: left;
+      color: #fff;      
+    }
+    h2{
+      font-family: Mont;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 33.74px;
+      text-align: left;
+      color: #fff;      
+    }
+    button{
+      background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+      padding: 16px 77px;
+      border: 0;
+      font-family: Mont;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 17.35px;
+      text-align: center;
+      color: #fff;  
+      width: 327px;
+    }
+  }
+}
+.recomend{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  h1{
+    font-family: Lighthaus;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37.45px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .recomend-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 30px;
+    justify-content: center;
+    margin-bottom: 46px;
+    .item{
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      &:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+      }
+      .heart{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 30px;
+        z-index: 11;
+        height: 50px;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-end;
+        &:hover{
+          --color-switcher: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        }
+      }
+      p{
+        font-family: Mont;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 19.28px;
+        text-align: left;
+        
+      }
+      span{
+        font-family: Mont;
+        font-size: 30px;
+        font-weight: 800;
+        line-height: 28.92px;
+        text-align: left;
+        
+      }
+      .txt{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+  }
+  button{
+    background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+    padding: 16px 77px;
+    border: 0;
+    font-family: Mont;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 17.35px;
+    text-align: center;
+    color: #fff;    
+  }
+  
+}
+
+.about{
+  margin-top: 120px;
+  h1{
+    font-family: Lighthaus;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 37.45px;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+  .about-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px 31px;
+    .item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 0px 40px 0px #0000001A;
+      padding: 21px;
+      gap: 18px;
+      img{
+        width: 63px;
+      }
+      h2{
+        font-family: Mont;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 24.1px;
+        text-align: left;
+        
+      }
+      p{
+        font-family: Mont;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 18.82px;
+        text-align: left;
+        
+      }
+      h4{
+        font-family: Mont;
+        font-size: 14px;
+        font-weight: 800;
+        line-height: 18.82px;
+        text-align: left;
+        
+      }
+    }
+  }
+}
+
+.last{
+  margin-top: 120px;
+  background-image: url(/public/images/mainstupid.png);
+  background-position: center;
+  background-size: cover;
+  height: 375px;
+  a{
+    font-family: Mont;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.82px;
+    text-align: left;
+    color: #fff;    
+  }
+  p{
+    font-family: Mont;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 17.35px;
+    text-align: left;
+    color: #fff;    
+  }
+  .container{
+    width: 1200px;
+    margin: 0 auto;
+    footer{
+      display: flex;
+      justify-content: space-between;
+      height: 375px;
+      align-items: center;
+
+      .left{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+      }
+      .right{
+        display: flex;
+        justify-content: space-between;
+        gap: 120px;
+      }
+      nav{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+    }
+  }
+}
